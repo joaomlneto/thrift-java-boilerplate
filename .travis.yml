@@ -1,4 +1,4 @@
-dist: bionic
+dist: trusty
 language: java
 
 addons:
@@ -13,12 +13,8 @@ addons:
       - libtool
       - pkg-config
 
-jdk:
-  - oraclejdk8
-  - oraclejdk11
-
 before_install:
   # install Apache Thrift
   - wget https://www-eu.apache.org/dist/thrift/0.12.0/thrift-0.12.0.tar.gz
-  - tar xzvf thrift-0.12.0.tar.gz
+  - tar xzf thrift-0.12.0.tar.gz
   - (cd thrift-0.12.0 && ./configure && make install)
