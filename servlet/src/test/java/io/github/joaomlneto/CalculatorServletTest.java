@@ -9,8 +9,6 @@ public class CalculatorServletTest implements IntegrationTest {
     public void testAdd() throws TException {
         String url = "http://localhost:8080/CalculatorServlet";
         Client client = new Client(url);
-        System.out.println("Hi there");
-        System.out.println("result is " + client.add(2, 2));
         Assert.assertEquals(11, client.add(4, 7));
     }
 }

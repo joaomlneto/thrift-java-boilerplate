@@ -54,9 +54,6 @@
           <element id="archive" name="service-interface-1.0-SNAPSHOT.jar">
             <element id="module-output" name="service-interface" />
           </element>
-          <element id="archive" name="client-1.0-SNAPSHOT.jar">
-            <element id="module-output" name="client" />
-          </element>
         </element>
       </element>
       <element id="directory" name="META-INF">
