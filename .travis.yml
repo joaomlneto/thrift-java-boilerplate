@@ -8,5 +8,5 @@ jdk:
 install:
   # install Apache Thrift
   - wget http://www.apache.org/dyn/closer.cgi?path=/thrift/0.12.0/thrift-0.12.0.tar.gz
-  - tar xzvf -C thrift
+  - tar xzvf thrift-0.12.0.tar.gz -C thrift
   - (cd thrift && ./configure && make install)
