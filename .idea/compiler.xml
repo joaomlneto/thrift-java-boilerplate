@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="servlet" />
+        <module name="client" />
+        <module name="server" />
+        <module name="servicehandler" />
+        <module name="service-interface" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="client" target="11" />
+      <module name="server" target="11" />
+      <module name="service-interface" target="11" />
+      <module name="servicehandler" target="11" />
+      <module name="servlet" target="11" />
+      <module name="thrift-java-boilerplate" target="11" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
