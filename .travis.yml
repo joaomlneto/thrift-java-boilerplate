@@ -1,4 +1,8 @@
 language: java
+
+apt_packages:
+  - thrit-compiler
+
 jdk:
   - oraclejdk8
   - oraclejdk11
