@@ -1,11 +1,23 @@
 dist: bionic
 language: java
 
+addons:
+  apt:
+    packages:
+      - automake
+      - bison
+      - flex
+      - libboost-all-dev
+      - libevent-dev
+      - libssl-dev
+      - libtool
+      - pkg-config
+
 jdk:
   - oraclejdk8
   - oraclejdk11
 
-install:
+before_install:
   # install Apache Thrift
   - wget https://www-eu.apache.org/dist/thrift/0.12.0/thrift-0.12.0.tar.gz
   - tar xzvf thrift-0.12.0.tar.gz
