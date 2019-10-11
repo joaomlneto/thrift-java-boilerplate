@@ -1,11 +1,12 @@
 dist: bionic
 language: java
 
-addons:
-  apt:
-    packages:
-      - thrift-compiler
-
 jdk:
   - oraclejdk8
   - oraclejdk11
+
+install:
+  # install Apache Thrift
+  - wget http://www.apache.org/dyn/closer.cgi?path=/thrift/0.12.0/thrift-0.12.0.tar.gz
+  - tar xzvf -C thrift
+  - (cd thrift && ./configure && make install)
