@@ -1,7 +1,9 @@
 language: java
 
-apt_packages:
-  - thrit-compiler
+addons:
+  apt:
+    packages:
+      - thrift-compiler
 
 jdk:
   - oraclejdk8
