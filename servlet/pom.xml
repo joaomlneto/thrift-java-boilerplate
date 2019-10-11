@@ -17,7 +17,7 @@
   <dependencies>
     <dependency>
       <groupId>io.github.joaomlneto</groupId>
-      <artifactId>service-shared</artifactId>
+      <artifactId>service-interface</artifactId>
       <version>${project.version}</version>
     </dependency>
     <dependency>
