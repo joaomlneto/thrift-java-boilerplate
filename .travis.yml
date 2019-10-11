@@ -4,17 +4,12 @@ language: java
 addons:
   apt:
     packages:
-      - automake
-      - bison
-      - flex
       - libboost-all-dev
       - libevent-dev
       - libssl-dev
-      - libtool
-      - pkg-config
 
 before_install:
   # install Apache Thrift
   - wget https://www-eu.apache.org/dist/thrift/0.12.0/thrift-0.12.0.tar.gz
   - tar xzf thrift-0.12.0.tar.gz
-  - (cd thrift-0.12.0 && ./configure && make install)
+  - (cd thrift-0.12.0 && ./configure && sudo make -j2 install)
