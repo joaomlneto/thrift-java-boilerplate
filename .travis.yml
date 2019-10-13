@@ -10,8 +10,7 @@ addons:
 
 before_install:
   # install Apache Thrift
-  - wget https://www-eu.apache.org/dist/thrift/0.12.0/thrift-0.12.0.tar.gz
-  - tar xzf thrift-0.12.0.tar.gz
-  - cd thrift-0.12.0
+  - git clone --branch 0.13.0 https://github.com/apache/thrift.git
+  - ./bootstrap.sh
   - ./configure --without-ruby --without-cpp --without-go --without-php --without-python --without-nodejs
   - sudo make -j2 install
