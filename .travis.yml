@@ -1,9 +1,10 @@
-dist: trusty
+dist: bionic
 language: java
 
 addons:
   apt:
     packages:
+      - ruby-full
       - libboost-all-dev
       - libevent-dev
       - libssl-dev
