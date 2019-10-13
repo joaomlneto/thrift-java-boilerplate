@@ -1,13 +1,9 @@
 dist: xenial
 language: java
 
-jdk:
-  - openjdk8
-
 addons:
   apt:
     packages:
-      - ruby-full
       - libboost-all-dev
       - libevent-dev
       - libssl-dev
@@ -17,5 +13,5 @@ before_install:
   - wget https://www-eu.apache.org/dist/thrift/0.12.0/thrift-0.12.0.tar.gz
   - tar xzf thrift-0.12.0.tar.gz
   - cd thrift-0.12.0
-  - ./configure
+  - ./configure --without-ruby --without-cpp --without-go --without-php --without-python --without-nodejs
   - sudo make -j2 install
