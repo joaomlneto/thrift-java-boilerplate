@@ -24,7 +24,7 @@
           <element id="library" level="project" name="Maven: commons-codec:commons-codec:1.10" />
           <element id="library" level="project" name="Maven: org.apache.httpcomponents:httpcore:4.4.1" />
           <element id="archive" name="service-handler-1.0-SNAPSHOT.jar">
-            <element id="module-output" name="servicehandler" />
+            <element id="module-output" name="service-handler" />
           </element>
         </element>
       </element>

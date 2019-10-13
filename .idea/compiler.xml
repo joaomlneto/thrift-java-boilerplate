@@ -9,15 +9,15 @@
         <module name="servlet" />
         <module name="client" />
         <module name="server" />
-        <module name="servicehandler" />
+        <module name="service-handler" />
         <module name="service-interface" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="client" target="11" />
       <module name="server" target="11" />
+      <module name="service-handler" target="11" />
       <module name="service-interface" target="11" />
-      <module name="servicehandler" target="11" />
       <module name="servlet" target="11" />
       <module name="thrift-java-boilerplate" target="11" />
     </bytecodeTargetLevel>
